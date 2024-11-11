@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Don't forget to connect the CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+
   <title>Library</title>
 </head>
+
 <body>
-  <h1>Library</h1>
-  <!-- Don't forget to connect the JavaScript file -->
+  <header>
+    <h1>WELCOME TO THE LIBRARY</h1>
+  </header>
+
+  <img src="assets/background.jpg" alt="Bibliotek bakgrundsbild" class="background-image">
+
+  <div class="controls">
+    <button id="randomBookButton">Show a Random Book</button>
+    <select id="genreFilter">
+      <option value="all">All Genres</option>
+    </select>
+    <select id="sortBooks">
+      <option value="bookNameAsc">Book Name A to Z</option>
+      <option value="bookNameDesc">Book Name Z to A</option>
+      <option value="nameAsc">Author Name A to Z</option>
+      <option value="nameDesc">Author Name Z to A</option>
+      <option value="yearAsc">Oldest to Newest</option>
+      <option value="yearDesc">Newest to Oldest</option>
+      <option value="ratingAsc">Lowest to Highest Rating</option>
+      <option value="ratingDesc">Highest to Lowest Rating</option>
+    </select>
+  </div>
+
+  <div id="bookList"></div>
+
+  <footer>
+    <p>Created by Arvid Wickzell</p>
+    <img src="assets/logo.svg" alt="Technigo logotyp">
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
